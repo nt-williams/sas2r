@@ -11,3 +11,8 @@ Description: Bring SAS ODS HTML outputs into R.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
+Imports: 
+    rvest,
+    purrr,
+    tibble
+RoxygenNote: 6.1.99.9001
