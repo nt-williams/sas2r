@@ -33,6 +33,6 @@ get_table <- function(x, i) {
 #' @export
 sas2r <- function(x, pattern) {
   i <- search_tables(x, pattern)
-  out <- purrr::map(i, get_table)
+  out <- purrr::map(i, ~ get_table(x, .x))
   return(out)
 }
